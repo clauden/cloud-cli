@@ -1,0 +1,12 @@
+<COMPUTE>
+        <NAME><%= compute_instancename %></NAME>
+        <STORAGE>
+                <DISK image="<%= compute_imageid %>" dev="hda"/>
+                <!-- <DISK image="10" dev="sda"/> -->
+        </STORAGE>
+        <NETWORK>
+                <NIC network="19"/> 
+        </NETWORK>
+        <INSTANCE_TYPE><%= compute_instancetype %></INSTANCE_TYPE>
+</COMPUTE>
+
